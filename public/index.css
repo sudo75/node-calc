@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 2px solid black;
+}
+
+.info {
+    box-sizing: border-box;
+    height: 95px;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hl {
+    font-size: 14px;
+}
+
+
+hr {
+    margin: 10px;
+}
+#info-div-line {
+    width: 100%;
+}
+#bottom-div-line {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#title {
+    margin: 5px;
+    height: 100%;
+    flex-grow: 2;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+sup {
+    margin-left: 5px;
+    font-size: 50%;
+    font-style: italic;
+}
+
+.display {
+    height: 100px;
+    border: 1px solid gray;
+    margin: 10px;
+}
+
+.ln {
+    box-sizing: border-box;
+    height: 50%;
+    padding: 5px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px;
+    user-select: all;
+}
+
+#ln1 {
+    font-weight: bold;
+}
+
+.log {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+
+    opacity: 1;
+}
+
+.log.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    width: 25%;
+    height: 90px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.key-hover, .btn:hover {
+    transform: scale(1.05);
+    border: solid gray 2px;
+    background-color: rgb(230, 230, 230);
+}
+.key-active, .btn:active {
+    border: solid gray 2px;
+    transform: scale(0.98);
+}
+
